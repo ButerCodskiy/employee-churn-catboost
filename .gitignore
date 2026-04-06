@@ -1,0 +1,16 @@
+archive*.zip
+*.zip
+data/
+models/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+catboost_info/
+PLAN.md
+scratch/
+*.log
+*_dump.txt
+cells_dump.txt
+all_cells.txt
