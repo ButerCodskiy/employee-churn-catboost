@@ -154,3 +154,4 @@ if __name__ == "__main__":
     print(f"Баланс классов в тесте: {test_df[TARGET_COL].value_counts(normalize=True).to_dict()}")
     print("Баланс классов по фолдам:")
     print(stats_df.to_string(index=False))
+
