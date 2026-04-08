@@ -96,3 +96,4 @@ if __name__ == "__main__":
     test_leak_free_imputation_isolation()
     print("[OK] test_leak_free_imputation_isolation")
     print("Все тесты валидации первого этапа успешно пройдены.")
+
