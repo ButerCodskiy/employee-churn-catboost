@@ -34,9 +34,9 @@ def train_fold_model(
     y_val: np.ndarray,
     cat_features: list[str],
     fold_idx: int,
-    depth: int = 4,
+    depth: int = 6,
     learning_rate: float = 0.03,
-    l2_leaf_reg: float = 5.0,
+    l2_leaf_reg: float = 10.0,
     iterations: int = 600,
     early_stopping_rounds: int = 50,
 ) -> tuple[CatBoostClassifier, np.ndarray, dict[str, list[float]]]:
@@ -101,9 +101,9 @@ def plot_cv_learning_curves(
 
 
 def run_cross_validation_training(
-    depth: int = 4,
+    depth: int = 6,
     learning_rate: float = 0.03,
-    l2_leaf_reg: float = 5.0,
+    l2_leaf_reg: float = 10.0,
     iterations: int = 600,
     early_stopping_rounds: int = 50,
 ) -> dict[str, Any]:
