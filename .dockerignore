@@ -1,0 +1,14 @@
+.git
+.gitignore
+.venv
+data/
+models/
+notebooks/
+reports/
+tests/
+PLAN.md
+__pycache__
+*.pyc
+*.parquet
+*.zip
+catboost_info

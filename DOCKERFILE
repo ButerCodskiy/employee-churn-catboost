@@ -1,0 +1,21 @@
+FROM python:3.11-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    UV_SYSTEM_PYTHON=1
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /bin/uv
+
+WORKDIR /app
+
+COPY pyproject.toml README.md ./
+
+RUN uv pip install --system --no-cache -r pyproject.toml
+
+COPY src/ ./src/
+
+RUN useradd -m -u 1000 appuser && chown -R appuser /app
+USER appuser
+
+ENTRYPOINT ["python", "-m"]
+CMD ["src.data_loader"]
