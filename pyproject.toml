@@ -21,3 +21,9 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
+
+[tool.ruff]
+exclude = [
+    "Untitled18 (1).ipynb",
+]
+line-length = 100
