@@ -1,3 +1,7 @@
-# Employee Churn Prediction (CatBoost)
+# Прогнозирование оттока сотрудников на базе CatBoost (HR Analytics)
 
-Pipeline for HR churn prediction.
+Промышленный пайплайн машинного обучения.
+
+## Метрики
+Test PR-AUC: 0.6373
+Test ROC-AUC: 0.8595
